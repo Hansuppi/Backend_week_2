@@ -1,0 +1,9 @@
+{
+  "name": "week2",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
