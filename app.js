@@ -8,19 +8,24 @@ app.get('/cat', (req, res) => {
 });
 
 // POST method route
-app.post('/cat', function (req, res) {
-  res.send('POST request to the homepage')
+app.post('/cat', (req, res) => {
+  res.send('With this endpoint you can add cats.')
 });
 
-// POST method route
-app.put('/cat', function (req, res) {
-  res.send('POST request to the homepage')
+// PUT method route
+app.put('/cat', (req, res) => {
+  res.send('With this endpoint you can edit cats.')
 });
 
-// POST method route
-app.delete('/cat', function (req, res) {
-  res.send('POST request to the homepage')
+// DELETE method route
+app.delete('/cat', (req, res) => {
+  res.send('With this endpoint you can delete cats.')
 });
+
+app.get('/cat/:id', function (req, res) {
+  res.send(req.params)
+});
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
